@@ -78,7 +78,6 @@ This repository is the implementation code of the paper "DenseFusion: 6D Object 
 		* **experiments/scripts/train_linemod.sh**: Training script on the LineMOD dataset.
 		* **experiments/scripts/eval_ycb.sh**: Evaluation script on the YCB_Video dataset.
 		* **experiments/scripts/eval_linemod.sh**: Evaluation script on the LineMOD dataset.
-* **download.sh**: Script for downloading YCB_Video Dataset, preprocessed LineMOD dataset and the trained checkpoints.
 
 
 ## Datasets
@@ -89,10 +88,9 @@ This work is tested on two 6D object pose estimation datasets:
 
 * [LineMOD](http://campar.in.tum.de/Main/StefanHinterstoisser): Download the [preprocessed LineMOD dataset](https://drive.google.com/drive/folders/19ivHpaKm9dOrr12fzC8IDFczWRPFxho7) (including the testing results outputted by the trained vanilla SegNet used for evaluation).
 
-Download YCB_Video Dataset, preprocessed LineMOD dataset and the trained checkpoints (You can modify this script according to your needs.):
-```	
-./download.sh
-```
+各データセットは以下のリンクからダウンロード可能
+* [YCB_Video Dataset](https://drive.google.com/file/d/1if4VoEXNx9W3XCn0Y7Fp15B4GpcYbyYi/view)
+* [Linemod_preprocessed と trained_checkpoints](https://drive.google.com/drive/folders/19ivHpaKm9dOrr12fzC8IDFczWRPFxho7)
 
 ## Training
 
