@@ -12,14 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxrender-dev \
     libgl1-mesa-dev
 
-RUN curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | apt-key add - && \
-    curl -s -L https://nvidia.github.io/nvidia-docker/$(. /etc/os-release;echo $ID$VERSION_ID)/nvidia-docker.list | tee /etc/apt/sources.list.d/nvidia-docker.list
-RUN curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | apt-key add - && \
-    curl -s -L https://nvidia.github.io/nvidia-container-runtime/$(. /etc/os-release;echo $ID$VERSION_ID)/nvidia-container-runtime.list | tee /etc/apt/sources.list.d/nvidia-container-runtime.list
-
-RUN apt-get update && apt-get install -y nvidia-container-toolkit nvidia-container-runtime
-
-RUN apt update && apt -y upgrade
+RUN apt-get update && apt-get -y upgrade
 
 ENV TZ=Asia/Tokyo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

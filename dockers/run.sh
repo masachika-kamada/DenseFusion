@@ -18,8 +18,5 @@ docker run \
     --env="XAUTHORITY=${XAUTH}" \
     --env="DISPLAY=${DISPLAY}" \
     --privileged -v /dev/bus/usb:/dev/bus/usb \
-    --net=host \
-    --runtime=nvidia \
+    --gpus all \
     dense_fusion
-
-    # --gpus all \
