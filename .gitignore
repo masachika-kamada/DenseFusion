@@ -1,4 +1,5 @@
 __pycache__/
 *.zip
-datasets/
+# datasets/
+Linemod_preprocessed/
 logs/
